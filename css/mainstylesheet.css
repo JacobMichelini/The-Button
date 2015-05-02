@@ -1,0 +1,271 @@
+html {
+	height: 100%;
+	background-color: #2E2E2E;
+}
+
+body {
+	height: 100%;
+}
+
+.midwrap {
+	width: 1000px;
+	height: 100%;
+	background-color: #171717;
+	margin: auto;
+	border-left: 10px double black; 
+	border-right: 10px double black;
+	box-shadow: 0px 0px 100px 10px black, 0px 0px 400px 0px black;
+	z-index: -5;
+	overflow: hidden;
+
+	transition: all .5s ease;
+}
+
+.thebutton {
+	width: 300px;
+	height: 200px;
+	background-color: red;
+	margin: auto;
+	position: relative;
+	border-radius: 20px;
+	box-shadow: 0px 0px 0px 0px red, 5px 5px 0px 0px #530000, 0px 0px 0px 0px #730000 inset, 0px 0px 20px 0px red, 0px 0px 10px 0px red, 20px 20px 20px 0px black;
+	transition: box-shadow .5s ease;
+	z-index: 7;
+
+	background-image: -webkit-gradient(
+	 linear,
+	 left bottom,
+	 left top,
+	 color-stop(0.8, rgb(213,0,0)),
+	 color-stop(0.85, rgb(221,49,49)),
+	 color-stop(1, rgb(234,130,130))
+	);
+	background-image: -moz-linear-gradient(
+	 center bottom,
+	 rgb(213,0,0) 80%,
+	 rgb(221,49,49) 85%,
+	 rgb(234,130,130) 100%);
+
+
+}
+
+.thebutton:hover {
+	box-shadow: 0px 0px 200px 0px red, 0px 0px 0px 0px #570000, 4px 4px 0px 0px #570000 inset, 0px 0px 20px 0px red, 0px 0px 0px 0px #171717;
+}
+
+.light {
+    display: block;
+    position: relative;
+    background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(50%,rgba(255,255,255,0.9)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0.9) 50%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0.9) 50%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0.9) 50%,rgba(255,255,255,0) 100%); /* IE10+ */
+	background: linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0.9) 50%,rgba(255,255,255,0) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+    padding: 1px 9px;
+    top: 0px;
+    left: 10px;
+    height: 0px;
+    width: 250px;
+    transition:all .5s ease;
+}
+
+.thebutton:hover .light {
+	top: 4px;
+}
+
+h1 {
+	font-size: 50px;
+	font-family: 'Orbitron', Helvetica;
+	font-weight: 900;
+	position: relative;
+	top: 80px;
+	left: 22px;
+	color: transparent;
+	text-shadow: 0px 0px 1px black;
+	transition: all .5s ease;
+
+	-moz-user-drag: none;
+	-moz-user-select: none;
+  	-webkit-user-select: none;
+  	-ms-user-select: none;
+   	user-select: none;
+   	user-drag: none; 
+	-webkit-user-drag: none;
+}
+
+.thebutton:hover h1 {
+	top: 84px;
+	left: 26px;
+	text-shadow: 0px 0px 5px black;
+}
+
+@-webkit-keyframes vibe {
+	0% { -webkit-transform: translate(2px, 1px) rotate(0deg) scale(1.0); }
+	10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+	30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+	40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+	50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg) scale(1.2); }
+	60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+	70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+	80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+	90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+	100% { -webkit-transform: translate(1px, -2px) rotate(-1deg) scale(1.0); }
+}
+
+@-moz-keyframes vibe {
+	0% { -moz-transform: translate(2px, 1px) rotate(0deg) scale(1.0); }
+	10% { -moz-transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { -moz-transform: translate(-3px, 0px) rotate(1deg); }
+	30% { -moz-transform: translate(0px, 2px) rotate(0deg); }
+	40% { -moz-transform: translate(1px, -1px) rotate(1deg); }
+	50% { -moz-transform: translate(-1px, 2px) rotate(-1deg) scale(1.2); }
+	60% { -moz-transform: translate(-3px, 1px) rotate(0deg); }
+	70% { -moz-transform: translate(2px, 1px) rotate(-1deg); }
+	80% { -moz-transform: translate(-1px, -1px) rotate(1deg); }
+	90% { -moz-transform: translate(2px, 2px) rotate(0deg); }
+	100% { -moz-transform: translate(1px, -2px) rotate(-1deg) scale(1.0); }
+}
+
+.shake:hover {
+	-webkit-animation-name: vibe;
+	-webkit-animation-duration: 0.8s;
+	-webkit-transform-origin:50% 50%;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+
+	-moz-animation-name: vibe;
+	-moz-animation-duration: 0.8s;
+	-moz-transform-origin:50% 50%;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-timing-function: linear;
+}
+
+.shake:hover h1 {
+	-webkit-animation-name: vibe;
+	-webkit-animation-duration: 0.8s;
+	-webkit-transform-origin:50% 50%;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+
+	-moz-animation-name: vibe;
+	-moz-animation-duration: 0.8s;
+	-moz-transform-origin:50% 50%;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-timing-function: linear;
+}
+
+.flare {
+	z-index: 0;
+	position: absolute;
+	pointer-events: none;
+	top:-600px;
+	left: -870px;
+	opacity: 0;
+	transition: all .5s ease;
+
+	-moz-user-drag: none;
+	-moz-user-select: none;
+  	-webkit-user-select: none;
+  	-ms-user-select: none;
+   	user-select: none;
+   	user-drag: none; 
+	-webkit-user-drag: none;
+}
+
+.thebutton:hover .flare {
+	opacity: .3;
+}
+
+.omega {
+	position: relative;
+	top: -130px;
+	left: 90px;
+	pointer-events: none;
+	z-index: 0;
+
+	-moz-user-drag: none;
+	-moz-user-select: none;
+  	-webkit-user-select: none;
+  	-ms-user-select: none;
+   	user-select: none;
+   	user-drag: none; 
+	-webkit-user-drag: none;
+}
+
+
+input[type=checkbox] {
+   position: absolute;
+   display: none;
+}
+
+/* Default State */
+.output {
+	width: 300px;
+	height: 200px;
+	background-color: transparent;
+	position: relative;
+	top: 300px;
+	margin: auto;
+	z-index: 2;
+}
+
+/* Toggled State */
+input[type=checkbox]:checked ~ .output {
+   -o-animation-name: hinge;
+	animation-name: hinge;
+
+	-webkit-animation-name: hinge;
+	-webkit-animation-iteration-count: 1;
+
+	-moz-animation-name: hinge;
+	-moz-animation-iteration-count: 1;
+}
+
+.animated{-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-ms-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-duration:1s;-moz-animation-duration:1s;-ms-animation-duration:1s;-o-animation-duration:1s;animation-duration:1s;}.animated.hinge{-webkit-animation-duration:1s;-moz-animation-duration:1s;-ms-animation-duration:1s;-o-animation-duration:1s;animation-duration:1s;}@-webkit-keyframes hinge {
+	0% { -webkit-transform: rotate(0); -webkit-transform-origin: top left; -webkit-animation-timing-function: ease-in-out; }	20%, 60% { -webkit-transform: rotate(80deg); -webkit-transform-origin: top left; -webkit-animation-timing-function: ease-in-out; }	
+	40% { -webkit-transform: rotate(60deg); -webkit-transform-origin: top left; -webkit-animation-timing-function: ease-in-out; }	
+	80% { -webkit-transform: rotate(60deg) translateY(0); opacity: 1; -webkit-transform-origin: top left; -webkit-animation-timing-function: ease-in-out; }	
+	100% { -webkit-transform: translateY(700px); opacity: 0; }
+}
+
+@-moz-keyframes hinge {
+	0% { -moz-transform: rotate(0); -moz-transform-origin: top left; -moz-animation-timing-function: ease-in-out; }	
+	20%, 60% { -moz-transform: rotate(80deg); -moz-transform-origin: top left; -moz-animation-timing-function: ease-in-out; }	
+	40% { -moz-transform: rotate(60deg); -moz-transform-origin: top left; -moz-animation-timing-function: ease-in-out; }	
+	80% { -moz-transform: rotate(60deg) translateY(0); opacity: 1; -moz-transform-origin: top left; -moz-animation-timing-function: ease-in-out; }	
+	100% { -moz-transform: translateY(700px); opacity: 0; }
+}
+
+@-o-keyframes hinge {
+	0% { -o-transform: rotate(0); -o-transform-origin: top left; -o-animation-timing-function: ease-in-out; }	
+	20%, 60% { -o-transform: rotate(80deg); -o-transform-origin: top left; -o-animation-timing-function: ease-in-out; }	
+	40% { -o-transform: rotate(60deg); -o-transform-origin: top left; -o-animation-timing-function: ease-in-out; }	
+	80% { -o-transform: rotate(60deg) translateY(0); opacity: 1; -o-transform-origin: top left; -o-animation-timing-function: ease-in-out; }	
+	100% { -o-transform: translateY(700px); opacity: 0; }
+}
+
+@keyframes hinge {
+	0% { transform: rotate(0); transform-origin: top left; animation-timing-function: ease-in-out; }	
+	20%, 60% { transform: rotate(80deg); transform-origin: top left; animation-timing-function: ease-in-out; }	
+	40% { transform: rotate(60deg); transform-origin: top left; animation-timing-function: ease-in-out; }	
+	80% { transform: rotate(60deg) translateY(0); opacity: 1; transform-origin: top left; animation-timing-function: ease-in-out; }	
+	100% { transform: translateY(700px); opacity: 0; }
+}
+
+.oliver {
+	position: absolute;
+	left: -800px;
+	z-index: 999;
+	top:-100px
+
+}
+
+/* Toggled State */
+input[type=checkbox]:checked ~ .oliver {
+   left: -200px;
+   transition: left 3s ease-in;
+   transition-delay: 1.5s;
+}
